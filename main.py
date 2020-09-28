@@ -119,7 +119,7 @@ async def listZ(li):
         li -= 1
     return n
 
-@app.get("/convert")
+@app.get("/convert/{li}")
 async def convert(li):
     a = []
     for i in li:
