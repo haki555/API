@@ -98,14 +98,14 @@ async def validation_ctzid(text):
         return False
 
 
-@app.get("/pow")
-async def pow(li)
-    ls = tonumlist(li)
-    return print(math.pow(a,b))
-     
 # @app.get("/pow")
-# async def pow(a: int = 0, b: int = 0):
-#     return math.pow(a,b)
+# async def pow(li)
+#     ls = tonumlist(li)
+#     return print(math.pow(a,b))
+     
+@app.get("/pow")
+async def pow(a: int = 0, b: int = 0):
+    return math.pow(a,b)
 
 @app.get("/validation-email")
 async def validation_email(text):  
