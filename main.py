@@ -31,6 +31,9 @@ async def add(a: int = 0, b: int = 0):
 async def mul(a: int = 0, b: int = 0):
     return a*b
 
+@app.get("/Kong")
+async def Kong(a)
+    return a
 
 def tonumlist(li):
     ls = li.split(',')
@@ -83,7 +86,10 @@ async def validation_ctzid(text):
 @app.get("/listx")
 async def listx(li):
     ls = tonumlist(li)
-    return np.mul(np.array(ls))
+    for i range(1,num+1):
+        foctorial = foctorial*i
+    return(foctorial)
+    
     
     sum = 0
     listdata = list(text)
