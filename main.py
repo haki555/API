@@ -135,7 +135,35 @@ async def validation_email(text):
         return True
     else:
         return False
+
+@app.get("/youtube-search",response_class=PlainTextResponse)
+def youtube_search(text)
+
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5; rv:81.0) Gecko/20100101 Firefox/81.0 ',
+        'Accept ': 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+        'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'DNT': '1',
+        'Connection': 'keep-alive',
+        'Uparge-Insecure-Requests': '1'
+    }
+    url ='https://www.youtube.com/results?search_query=' + str(text)
+    res = requests.get(url, headers = headers)
+    soup = BeautifulSoup(res.content, 'html.parser')
+
+    t = soup.findAll('div,'{'class':"r"})
+    i = 0
+    result = ''
+    for a in t:
+        href = a.a['href']
+        head = a.h3.text
+        result = result + head + '<br>' + href + '<br><br>'
+        i += 1
+        if(i >= 5):
+            break
     
+    return(result)
     
 @app.get("/google-search",response_class=PlainTextResponse)
 def google_search(text):
