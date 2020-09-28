@@ -32,7 +32,6 @@ async def mul(a: int = 0, b: int = 0):
     return a*b
 
 
-
 def tonumlist(li):
     ls = li.split(',')
     for i in range(len(ls)):
