@@ -152,7 +152,7 @@ def youtube_search(text):
     res = requests.get(url, headers = headers)
     soup = BeautifulSoup(res.content, 'html.parser')
 
-    t = soup.findAll('div,'{'class':"r"})
+    t = soup.findAll('div',{'class':"r"})
     i = 0
     result = ''
     for a in t:
