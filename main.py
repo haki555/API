@@ -114,7 +114,7 @@ async def pow(a: int = 0, b: int = 0):
 async def listZ(li):
     ls = tonumlist(li)
     n = 1
-    while li >1
+    while li >1:
         n *= li
         li -= 1
     return n
