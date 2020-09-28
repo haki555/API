@@ -100,6 +100,7 @@ async def validation_ctzid(text):
 @app.get("/pow")
 async def min(li)
     ls = tonumlist(li)
+    math.pow(a,b)
     return np.apow
 
 @app.get("/validation-email")
