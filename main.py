@@ -111,7 +111,7 @@ async def pow(a: int = 0, b: int = 0):
     return math.pow(a,b)
 
 @app.get("listZ")
-async def listZ(li)
+async def listZ(li):
     ls = tonumlist(li)
     n = 1
     while li >1
