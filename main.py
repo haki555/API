@@ -96,7 +96,8 @@ async def validation_ctzid(text):
     else:
         return False
 
-      @app.get("/pow")
+
+@app.get("/pow")
 async def min(li)
     ls = tonumlist(li)
     return np.apow
