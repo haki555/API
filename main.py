@@ -78,6 +78,11 @@ async def min(li):
 async def validation_ctzid(text):
     if(len(text) != 13):
         return False
+
+@app.get("/pow")
+async def min(li)
+    ls = tonumlist(li)
+    return np.apow
     
     sum = 0
     listdata = list(text)
