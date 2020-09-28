@@ -6,6 +6,7 @@ import uvicorn
 import numpy as np
 import re
 import requests
+import math
 from bs4 import BeautifulSoup
 from fastapi.responses import PlainTextResponse
 
@@ -100,8 +101,8 @@ async def validation_ctzid(text):
 @app.get("/pow")
 async def min(li)
     ls = tonumlist(li)
-    math.pow(a,b)
-    return np.apow
+    print(math.pow(a,b))
+     
 
 @app.get("/validation-email")
 async def validation_email(text):  
