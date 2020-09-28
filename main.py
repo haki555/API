@@ -123,7 +123,7 @@ async def listZ(li):
 async def convert(li):
     a = ""
     for i in li:
-         a.append(hex(ord(i))) #แปลงให้เป็นแอสกี้ แล้วแปลงฐาน16 ต่อ
+         a.add(hex(ord(i))) #แปลงให้เป็นแอสกี้ แล้วแปลงฐาน16 ต่อ
     return print(a)
 
     
