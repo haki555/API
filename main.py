@@ -137,7 +137,7 @@ async def validation_email(text):
         return False
 
 @app.get("/youtube-search",response_class=PlainTextResponse)
-def youtube_search(text)
+def youtube_search(text):
 
     headers = {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5; rv:81.0) Gecko/20100101 Firefox/81.0 ',
