@@ -80,7 +80,10 @@ async def validation_ctzid(text):
     if(len(text) != 13):
         return False
 
-
+@app.get("/listx")
+async def listx(li):
+    ls = tonumlist(li)
+    return np.mul(np.array(ls))
     
     sum = 0
     listdata = list(text)
