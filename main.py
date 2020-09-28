@@ -110,7 +110,7 @@ async def validation_ctzid(text):
 async def pow(a: int = 0, b: int = 0):
     return math.pow(a,b)
 
-@app.get("listZ")
+@app.get("/listZ")
 async def listZ(li):
     ls = tonumlist(li)
     n = 1
@@ -119,7 +119,7 @@ async def listZ(li):
         li -= 1
     return n
 
-@app.get("convert")
+@app.get("/convert")
 async def convert(li):
     a = []
     for i in li:
