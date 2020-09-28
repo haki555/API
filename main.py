@@ -99,7 +99,7 @@ async def validation_ctzid(text):
 
 
 @app.get("/pow")
-async def min(li)
+async def pow(li)
     ls = tonumlist(li)
     return print(math.pow(a,b))
      
