@@ -141,7 +141,7 @@ def youtube_search(text):
 
     headers = {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5; rv:81.0) Gecko/20100101 Firefox/81.0 ',
-        'Accept ': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8,
+        'Accept ': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
         'Accept-Language': 'en-US,en;q=0.5',
         'Accept-Encoding': 'gzip, deflate',
         'DNT': '1',
