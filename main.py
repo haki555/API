@@ -122,7 +122,7 @@ async def listZ(li)
         li -= 1
     retun n
 
-@app.get(convert)
+@app.get("convert")
 async def convert(li):
     a = []
     for i in li:
