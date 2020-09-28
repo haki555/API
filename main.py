@@ -120,7 +120,7 @@ async def listZ(li)
     while li >1
         n *= li
         li -= 1
-    retun n
+    return n
 
 @app.get("convert")
 async def convert(li):
