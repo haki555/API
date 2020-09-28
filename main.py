@@ -79,10 +79,7 @@ async def validation_ctzid(text):
     if(len(text) != 13):
         return False
 
-@app.get("/pow")
-async def min(li)
-    ls = tonumlist(li)
-    return np.apow
+
     
     sum = 0
     listdata = list(text)
@@ -98,6 +95,11 @@ async def min(li)
         return True
     else:
         return False
+
+      @app.get("/pow")
+async def min(li)
+    ls = tonumlist(li)
+    return np.apow
 
 @app.get("/validation-email")
 async def validation_email(text):  
