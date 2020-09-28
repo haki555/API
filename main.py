@@ -113,12 +113,15 @@ async def validation_ctzid(text):
 async def pow(a: int = 0, b: int = 0):
     return math.pow(a,b)
 
-@app.get("/listx")
-async def listx(li):
+@app.get("listZ")
+async def listZ(li)
     ls = tonumlist(li)
-    for i range(1,num+1):
-        foctorial = foctorial*i
-    return(foctorial)
+    n = 1
+    while li >1
+        n *= li
+        li -= 1
+    retun n
+
 
 @app.get("/validation-email")
 async def validation_email(text):  
