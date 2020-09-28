@@ -78,19 +78,16 @@ async def min(li):
     ls = tonumlist(li)
     return np.amin(ls)
 
+    
+
 @app.get("/validation-ctzid")
 async def validation_ctzid(text):
     if(len(text) != 13):
         return False
+ 
 
-@app.get("/listx")
-async def listx(li):
-    ls = tonumlist(li)
-    for i range(1,num+1):
-        foctorial = foctorial*i
-    return(foctorial)
-    
-    
+
+
     sum = 0
     listdata = list(text)
     
@@ -115,6 +112,13 @@ async def listx(li):
 @app.get("/pow")
 async def pow(a: int = 0, b: int = 0):
     return math.pow(a,b)
+
+@app.get("/listx")
+async def listx(li):
+    ls = tonumlist(li)
+    for i range(1,num+1):
+        foctorial = foctorial*i
+    return(foctorial)
 
 @app.get("/validation-email")
 async def validation_email(text):  
