@@ -120,10 +120,10 @@ async def listZ(li):
     return n
 
 @app.get("/convert")
-async def convert(li):
-    a = ""
+async def convert(li str:):
+    a = []
     for i in li:
-         a+=(hex(ord(i))) #แปลงให้เป็นแอสกี้ แล้วแปลงฐาน16 ต่อ
+         a.append(hex(ord(i))) #แปลงให้เป็นแอสกี้ แล้วแปลงฐาน16 ต่อ
     return print(a)
 
     
